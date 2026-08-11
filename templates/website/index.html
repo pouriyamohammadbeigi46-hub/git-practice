@@ -1,13 +1,187 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  </title>
-    <link rel = "stylesheet" href = "{% static 'test.css'%}"> 
-</head>
-<body>
-    <h1> index </h1>
-</body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Paradigm Shift by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+
+		<style>
+			.gallery a img {
+				width: 100% !important;
+				height: auto !important;
+				object-fit: cover !important;
+				filter: none !important;
+				opacity: 1 !important;
+			}
+			.gallery a::after,
+			.gallery a::before {
+				display: none !important;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+				<section class="intro">
+						<header>
+							<h1>Paradigm Shift</h1>
+							<p>A free responsive site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="{% static 'images/pic01.jpg' %}" alt="" /></span>
+						</div>
+					</section>
+
+				<section id="first">
+						<header>
+							<h2>Magna veroeros</h2>
+						</header>
+						<div class="content">
+							<p><strong>Aenean ante feugiat</strong> lorem ipsum dolor sit amet nullam imperdiet magna ac egestas magna feugiat cursus feugiat feugiat hendrerit felis eros lorem sed tempor imperdiet felis egestas tempor phasellus magna feugiat felis ante feugiat lorem ipsum dolor sit amet nisl tempus lorem.</p>
+							<span class="image main"><img src="{% static 'images/pic02.jpg' %}" alt="" /></span>
+						</div>
+					</section>
+
+				<section>
+						<header>
+							<h2>Feugiat amet lorem</h2>
+						</header>
+						<div class="content">
+							<p><strong>Sed egestas</strong> phasellus magna consequat lorem dolor feugiat cursus. Interdum magna feugiat hendrerit felis eros lorem sed tempor imperdiet felis tempus lorem.</p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-laptop">Consectetur</li>
+								<li class="icon solid fa-bolt">Amet imperdiet</li>
+								<li class="icon solid fa-signal">Sed feugiat</li>
+								<li class="icon solid fa-cog">Magna sed lorem</li>
+								<li class="icon solid fa-map-marker-alt">Nisl adipiscing</li>
+								<li class="icon solid fa-code">Nulla cupidatat</li>
+							</ul>
+							<p>Vehicula ultrices sed hendrerit amet phasellus lorem eros dolor sed ultrices tempor sequi magna feugiat sed adipiscing undo commodo felis.</p>
+						</div>
+					</section>
+
+				<section>
+						<header>
+							<h2>Ultrices tempor</h2>
+						</header>
+						<div class="content">
+							<p><strong>Aenean ante feugiat</strong> lorem ipsum dolor sit amet nullam imperdiet magna ac egestas magna feugiat cursus feugiat feugiat hendrerit felis eros lorem sed tempor imperdiet felis egestas tempor phasellus magna feugiat felis ante feugiat lorem ipsum dolor sit amet nisl tempus lorem.</p>
+
+							<div class="gallery">
+									<a href="{% static 'images/pic01.jpg' %}" class="landscape"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
+									<a href="{% static 'images/pic02.jpg' %}"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+									<a href="{% static 'images/pic01.jpg' %}"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
+									<a href="{% static 'images/pic02.jpg' %}" class="landscape"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+								</div>
+
+						</div>
+					</section>
+
+				<section>
+						<header>
+							<h2>Duis urna hendrerit</h2>
+						</header>
+						<div class="content">
+							<p><strong>Aenean ante feugiat</strong> lorem ipsum dolor sit amet nullam imperdiet magna ac egestas magna feugiat cursus feugiat feugiat hendrerit felis eros lorem sed tempor imperdiet felis egestas tempor phasellus magna feugiat felis ante feugiat lorem ipsum dolor sit amet nisl tempus lorem.</p>
+						</div>
+					</section>
+
+				<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Blockquote</h3>
+								</header>
+								<div class="content">
+									<blockquote>Fringilla nisl. Donec vulputate lacus risus, sapien viverra at. Eleifend lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Eleifend lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</blockquote>
+								</div>
+							</section>
+						</div>
+					</section>
+
+				<section>
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							<p><strong>Auctor aliquet</strong> magna feugiat ex nec semper. Sed consequat lorem dolor feugiat cursus dolore magna lorem ipsum dolor sit amet consequat feugiat.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+						</div>
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">information@untitled.tld</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<a href="#">(000) 000-0000</a>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>1234 Somewhere Road, Nashville, TN 37072</span>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+					</section>
+
+				<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
 </html>
